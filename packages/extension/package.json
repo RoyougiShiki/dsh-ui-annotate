@@ -1,0 +1,15 @@
+{
+  "name": "dsh-ui-annotate-extension",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MV3 extension: annotate any page you are logged into, hand the result to dsh.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "subjx": "2.0.1"
+  },
+  "license": "MIT"
+}

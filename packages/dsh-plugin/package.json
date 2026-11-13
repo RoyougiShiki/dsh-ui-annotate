@@ -1,0 +1,34 @@
+{
+  "name": "dsh-ui-annotate",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH client plugin: write annotations into the composer draft, and show how to install the extension.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": false,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "license": "MIT"
+}
