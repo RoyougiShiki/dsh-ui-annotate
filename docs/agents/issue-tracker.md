@@ -10,6 +10,11 @@
 票先写成 **local markdown**，落在 `.scratch/ui-annotate/issues/`，一票一文件、按依赖顺序编号。
 远端仓库建好之后，把它们逐条发成 GitHub issue（blockers 先发），并把 `Blocked by` 写成 `Blocked by: #12` 这种文本引用——私有免费仓库没有原生 blocking link。
 
+## 旧仓库
+
+`https://github.com/RoyougiShiki/ui-annotate`（private，main@27bc686，1745 行）**保留作历史，不删，也不作为本仓库的上游**。
+它用的是 `ego-browser` 往 TaskSpace 注入 `recorder.js` 那套架构，在 Windows 上有三处断点；本仓库是扩展 + dsh 客户端插件，两者不共享代码。混在一起会让后来人分不清哪条结论还成立。
+
 ## Conventions
 
 - 一票一个文件，文件名 `NN-slug.md`。
