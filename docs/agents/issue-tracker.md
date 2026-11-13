@@ -1,14 +1,15 @@
 # Issue tracker
 
-- **Kind**: GitHub Issues（远端**尚未创建**，等用户点头）
-- **Repository (planned)**: `https://github.com/RoyougiShiki/dsh-ui-annotate`（private）
+- **Kind**: GitHub Issues（远端**已创建、已推送**，2026-11-13）
+- **Repository**: `https://github.com/RoyougiShiki/dsh-ui-annotate` —— **PUBLIC**
 - **CLI**: `gh` at `E:\SoftWare\GitHubCLI\bin\gh.exe`（2.96.0，已登录）。`where gh` 失败只是因为 `run_code` 的 `process.env` 为空，不代表没装。
 - **PRs as a request surface**: off
 
 ## 当前状态
 
-票先写成 **local markdown**，落在 `.scratch/ui-annotate/issues/`，一票一文件、按依赖顺序编号。
-远端仓库建好之后，把它们逐条发成 GitHub issue（blockers 先发），并把 `Blocked by` 写成 `Blocked by: #12` 这种文本引用——私有免费仓库没有原生 blocking link。
+票现在是 **local markdown**：`.scratch/ui-annotate/issues/`，一票一文件、按依赖顺序编号。远端仓库已建好，但**票还没发成 GitHub issue**——`gh issue create` 是发布动作，等用户点头再发。
+
+发的时候 blockers 先发，`Blocked by` 写成 `Blocked by: #12` 这种文本引用（没有原生 blocking link）；发完把本地文件里的编号换成 issue 号。
 
 ## 旧仓库
 
